@@ -316,7 +316,7 @@ int menu_developer(){
   printf("\n Data Release: 29/11/2023 ");
   printf("\n Versao Codigo: 2.0.1v");
   printf("\n Replit: @PHNO, @PHREPLIT");
-  printf("\n Email: phreplit@gmail.com \n");
+  printf("\n E-mail: phreplit@gmail.com \n");
   printf("\n Teclar enter para retornar ao menu...\n ");
   getchar();
   scanf("c\n");
