@@ -1,9 +1,9 @@
 
 //  Author: PHNO - Tecnólogo | Pós-Graduado em Energia Solar Fotovoltaica
 //  Data Release: 29/11/2023
-//  Versao Codigo: 2.0.1v
+//  Versão Código: 2.0.1v
 //  Replit: @PHNO, @PHREPLIT
-//  Email: phreplit@gmail.com
+//  E-mail: phreplit@gmail.com
 
 // Algoritmo: Dimensionamento e Calculo para Sistema Fotovoltaico na area de Energia Solar Fotovoltaica, 
 // desenvolvido para estudantes e profissionais de engenharia eletrica e areas correlatas, como energias renovaveis.
@@ -37,11 +37,8 @@ printf("\n4. Calcular Geração Semanal de Energia Solar");
 printf("\n5. Calcular Geração Mensal de Energia Solar");
 printf("\n6. Calcular Geração Anual de Energia Solar ");
 printf("\n7. Calcular e Dimensionar a Quantidade de Modulos\n");
-
 printf("\n[8] Info\n");
-
 printf("\n[9] Sobre\n");
-
 printf("\n10. Sair\n");
 
 printf("\nDigite sua escolha: ");
@@ -91,16 +88,16 @@ printf("\n Algoritmo Finalizado! \n"); // Ao Sair
 printf("\n");
 return 0;
 break;
-default: // funcao padrao
+default: // resposta padrao
 printf("\n");
 printf("Opcao Incorreta!\n"); 
 printf("\n");
-//printf("\n");
+// printf("\n");
 printf("\nTeclar enter para retornar ao menu...\n");
 getchar();
 scanf("c\n");
 system("clear");      // linux limpar tela
-system("tput reset"); // linux limpar
+system("tput reset"); // linux limpar texto
 } 
 } 
 return 0; 
@@ -123,7 +120,7 @@ printf("\nTeclar enter para retornar ao menu...\n");
 getchar();
 scanf("c\n");
 system("clear");      // linux limpar tela
-system("tput reset"); // linux limpar
+system("tput reset"); // linux limpar texto
 return; 
 }
 
@@ -144,7 +141,7 @@ printf("\nTeclar enter para retornar ao menu...\n");
 getchar();
 scanf("c\n");
 system("clear");      // linux limpar tela
-system("tput reset"); // linux limpar
+system("tput reset"); // linux limpar texto
 return; 
 }
 
@@ -167,7 +164,7 @@ printf("\nTeclar enter para retornar ao menu...\n");
 getchar();
 scanf("c\n");
 system("clear");      // linux limpar tela
-system("tput reset"); // linux limpar
+system("tput reset"); // linux limpar texto
 return; 
 }
 
@@ -192,12 +189,12 @@ resultado = v4 / v5;
 printf("\n o resultado sera %.2f kwh/semana geracao [leste/oeste]\n", resultado);
 // system("pause"); // pausa tela windows
 // system("Cls"); // limpa tela windows
-//printf("\n"); // pula linha
+// printf("\n"); // pula linha
 printf("\nTeclar enter para retornar ao menu...\n");
 getchar();
 scanf("c\n");
 system("clear");      // linux limpar tela
-system("tput reset"); // linux limpar
+system("tput reset"); // linux limpar texto
 return; 
 }
 
@@ -222,12 +219,12 @@ resultado = v4 / v5;
 printf("\n o resultado sera %.2f kwh/mes geracao [leste/oeste]\n", resultado);
 // system("pause"); // pausa tela windows
 // system("Cls"); // limpa tela windows
-//printf("\n"); // pula linha
+// printf("\n"); // pula linha
 printf("\nTeclar enter para retornar ao menu...\n"); 
 getchar();
 scanf("c\n");
 system("clear");      // linux limpar tela
-system("tput reset"); // linux limpar
+system("tput reset"); // linux limpar texto
 return; 
 }
 
@@ -252,12 +249,12 @@ resultado = v4 / v5;
 printf("\n o resultado sera %.2f kwh/ano geracao [leste/oeste]\n", resultado);
 // system("pause"); // pausa tela windows
 // system("Cls"); // limpa tela windows
-//printf("\n"); // pula linha
+// printf("\n"); // pula linha
 printf("\nTeclar enter para retornar ao menu...\n");
 getchar();
 scanf("c\n");
 system("clear");      // linux limpar tela
-system("tput reset"); // linux limpar
+system("tput reset"); // linux limpar texto
 return; 
 }
 
@@ -275,18 +272,18 @@ resultado = (v1 / v2);
 printf("\n A quantidade maxima de modulos para este dimensionamento eh de %.2f placas fotovoltaicas.\n", resultado);
 // system("pause"); // pausa tela windows
 // system("Cls"); // limpa tela windows
-//printf("\n"); // pula linha
+// printf("\n"); // pula linha
 printf("\nTeclar enter para retornar ao menu...\n");
 getchar();
 scanf("c\n");
 system("clear");      // linux limpar tela
-system("tput reset"); // linux limpar
+system("tput reset"); // linux limpar texto
 return; 
 }
 
 void op8() { 
 system("clear");      // linux limpar tela
-system("tput reset"); // linux limpar
+system("tput reset"); // linux limpar texto
 printf("\n");
 printf("\nInfo ");
 printf("\n");
@@ -302,12 +299,12 @@ printf("\nPara converter 1kwh para 1wh basta fazer o calculo ex: 73kwh para wh s
 printf("\n");
 // system("pause"); // pausa tela windows
 // system("Cls"); // limpa tela windows
-//printf("\n"); // pula linha
+// printf("\n"); // pula linha
 printf("\nTeclar enter para retornar ao menu...\n");
 getchar();
 scanf("c\n");
 system("clear");      // linux limpar tela
-system("tput reset"); // linux limpar
+system("tput reset"); // linux limpar texto
 return; 
 }
 
