@@ -311,7 +311,6 @@ system("tput reset"); // linux limpar
 return; 
 }
 
-
 int menu_developer(){
   system("clear");      // linux
   system("tput reset"); // linux
@@ -326,8 +325,5 @@ int menu_developer(){
   scanf("c\n");
   system("clear");      // linux
   system("tput reset"); // linux
-    return 0;
+  return 0;
 }
-
-
-
