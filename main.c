@@ -13,7 +13,7 @@
 #include <math.h> 
 
 int menu(); 
-void op1(); 
+void op1(); // cabecalho
 void op2(); 
 void op3();
 void op4();
@@ -53,7 +53,7 @@ return op;
 
 int main() { // Funcao principal
 
-int op, c;
+int op = 0, c;
 
 while (op != -1) { 
 op = menu(); 
@@ -106,7 +106,7 @@ system("tput reset"); // linux limpar
 return 0; 
 } 
 
-void op1() { // 
+void op1() { 
 double v1;
 double v2 = 10;
 double resultado;
@@ -127,7 +127,7 @@ system("tput reset"); // linux limpar
 return; 
 }
 
-void op2() { // 
+void op2() { 
 double v1;
 double v2 = 10;
 double resultado;
@@ -148,7 +148,7 @@ system("tput reset"); // linux limpar
 return; 
 }
 
-void op3() { // 
+void op3() { 
 int v1;
 int v2;
 int resultado;
@@ -171,7 +171,7 @@ system("tput reset"); // linux limpar
 return; 
 }
 
-void op4() { // 
+void op4() { 
 float v1;
 float v2;
 float v3;
@@ -201,7 +201,7 @@ system("tput reset"); // linux limpar
 return; 
 }
 
-void op5() { // 
+void op5() { 
 float v1;
 float v2;
 float v3;
@@ -231,7 +231,7 @@ system("tput reset"); // linux limpar
 return; 
 }
 
-void op6() { // 
+void op6() { 
 float v1;
 float v2;
 float v3;
@@ -261,7 +261,7 @@ system("tput reset"); // linux limpar
 return; 
 }
 
-void op7() { // 
+void op7() { 
 float v1;
 float v2;
 float resultado;
@@ -284,7 +284,7 @@ system("tput reset"); // linux limpar
 return; 
 }
 
-void op8() { // 
+void op8() { 
 system("clear");      // linux limpar tela
 system("tput reset"); // linux limpar
 printf("\n");
