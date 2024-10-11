@@ -21,7 +21,7 @@ void op5();
 void op6();
 void op7();
 void op8();
-int menu_developer();
+int menu_desenvolvedor();
 
 int menu() { // Funcao Menu  
 int op, c;
@@ -80,7 +80,7 @@ case 8:
 op8(); // funcao 8
 break;
 case 9:
-menu_developer(); // funcao 9
+menu_desenvolvedor(); // funcao 9
 break;
 case 10:
 printf("\n");
@@ -308,7 +308,7 @@ system("tput reset"); // linux limpar texto
 return; 
 }
 
-int menu_developer(){
+int menu_desenvolvedor(){
   system("clear");      // linux
   system("tput reset"); // linux
   printf("\n Algoritmo: Dimensionamento e Calculo para Sistema Fotovoltaico \n");
