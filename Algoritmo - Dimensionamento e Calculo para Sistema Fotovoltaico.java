@@ -160,9 +160,12 @@ switch (choice) {
   System.out.println("Para converter volts em watts multiplicamos os volts por 10.");
   System.out.println("Para converter watts em volts dividimos os watts por 10.");
   System.out.println("Para calcular a potencia dos modulos fazemos a multiplicacao da potencia nominal do modulo vezes a quantidade de modulos.");
-  System.out.println("Para calcular a geracao semanal utilizamos o calculo (potencia dos modulos)x(horas por dia)x(dias por semana) e o resultado será em watts-hora e então para obtê-lo em kwh dividiremos por 1000 para converter para kwh, conforme calculado acima.");
-  System.out.println("Para calcular a geracao mensal utilizamos o calculo (potencia dos modulos)x(horas por dia)x(dias por mes) e o resultado será em watts-hora e então para obtê-lo em kwh dividiremos por 1000 para converter para kwh, conforme calculado acima.");
-  System.out.println("Para calcular a geracao anual utilizamos o calculo (potencia dos modulos)x(horas por dia)x(dias por ano) e o resultado será em watts-hora e então para obtê-lo em kwh dividiremos por 1000 para converter para kwh, conforme calculado acima.");
+  System.out.println("Para calcular a geracao semanal utilizamos o calculo (potencia dos modulos)x(horas por dia)x(dias por semana) ");
+  System.out.println("e o resultado será em watts-hora e então para obtê-lo em kwh dividimos por 1000 para converter para kwh, conforme calculado acima.");
+  System.out.println("Para calcular a geracao mensal utilizamos o calculo (potencia dos modulos)x(horas por dia)x(dias por mes) ");
+  System.out.println("e o resultado será em watts-hora e então para obtê-lo em kwh dividimos por 1000 para converter para kwh, conforme calculado acima.");
+  System.out.println("Para calcular a geracao anual utilizamos o calculo (potencia dos modulos)x(horas por dia)x(dias por ano) ");
+  System.out.println("e o resultado será em watts-hora e então para obtê-lo em kwh dividimos por 1000 para converter para kwh, conforme calculado acima.");
   System.out.println("Para calcular e dimensionar a quantidade de modulos que compoe um painel solar utilizamos o seguinte calculo: ");
   System.out.println("Potencia calculada do sistema (Pfv) em watts dividido pela Potencia nominal do modulo em watts = a Quantidade de Modulos.");
   System.out.println("Para converter 1kwh para 1wh basta fazer o calculo ex: 73kwh para wh sera 73000 wh.");
