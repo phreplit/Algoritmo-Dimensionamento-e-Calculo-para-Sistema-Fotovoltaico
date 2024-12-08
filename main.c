@@ -21,6 +21,7 @@ void op5();
 void op6();
 void op7();
 void op8();
+void reset_screen();
 int menu_desenvolvedor();
 
 int menu() { // Funcao Menu  
@@ -112,9 +113,7 @@ scanf("%lf", &v1, stdin);
 resultado = (v1 * v2);
 printf("\n");
 printf("\n Os %1.f volts inseridos equivalem a %1.f watts. \n", v1, resultado);
-// system("pause"); // pausa tela windows
-// system("Cls"); // limpa tela windows
-//printf("\n"); // pula linha
+
 printf("\nTeclar enter para retornar ao menu...\n");
 getchar();
 scanf("c\n");
@@ -132,9 +131,7 @@ scanf("%lf", &v1, stdin);
 resultado = (v1 / v2);
 printf("\n");
 printf("\n Os %1.f watts inseridos equivalem a %1.f volts. \n", v1, resultado);
-// system("pause"); // pausa tela windows
-// system("Cls"); // limpa tela windows
-//printf("\n"); // pula linha
+
 printf("\nTeclar enter para retornar ao menu...\n");
 getchar();
 scanf("c\n");
@@ -154,9 +151,7 @@ printf("\n Digite a quantidade de modulos: ");
 scanf("%d", &v2, stdin);
 resultado = (v1 * v2);
 printf("\n A potencia dos modulos sera de %d watts.\n", resultado);
-// system("pause"); // pausa tela windows
-// system("Cls"); // limpa tela windows
-//printf("\n"); // pula linha
+
 printf("\nTeclar enter para retornar ao menu...\n");
 getchar();
 scanf("c\n");
@@ -183,9 +178,7 @@ scanf("%f", &v3, stdin);
 v4 = (v1 * v2 * v3);
 resultado = v4 / v5;
 printf("\n o resultado sera %.2f kwh/semana geracao [leste/oeste]\n", resultado);
-// system("pause"); // pausa tela windows
-// system("Cls"); // limpa tela windows
-// printf("\n"); // pula linha
+
 printf("\nTeclar enter para retornar ao menu...\n");
 getchar();
 scanf("c\n");
@@ -212,9 +205,7 @@ scanf("%f", &v3, stdin);
 v4 = (v1 * v2 * v3);
 resultado = v4 / v5;
 printf("\n o resultado sera %.2f kwh/mes geracao [leste/oeste]\n", resultado);
-// system("pause"); // pausa tela windows
-// system("Cls"); // limpa tela windows
-// printf("\n"); // pula linha
+
 printf("\nTeclar enter para retornar ao menu...\n"); 
 getchar();
 scanf("c\n");
@@ -241,9 +232,7 @@ scanf("%f", &v3, stdin);
 v4 = (v1 * v2 * v3);
 resultado = v4 / v5;
 printf("\n o resultado sera %.2f kwh/ano geracao [leste/oeste]\n", resultado);
-// system("pause"); // pausa tela windows
-// system("Cls"); // limpa tela windows
-// printf("\n"); // pula linha
+
 printf("\nTeclar enter para retornar ao menu...\n");
 getchar();
 scanf("c\n");
@@ -263,9 +252,7 @@ printf("\n Digite a Potencia nominal do modulo em watts: ");
 scanf("%f", &v2, stdin);
 resultado = (v1 / v2);
 printf("\n A quantidade maxima de modulos para este dimensionamento eh de %.2f placas fotovoltaicas.\n", resultado);
-// system("pause"); // pausa tela windows
-// system("Cls"); // limpa tela windows
-// printf("\n"); // pula linha
+
 printf("\nTeclar enter para retornar ao menu...\n");
 getchar();
 scanf("c\n");
