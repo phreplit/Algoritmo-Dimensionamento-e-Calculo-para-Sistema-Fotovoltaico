@@ -96,8 +96,7 @@ printf("\n");
 printf("\nTeclar enter para retornar ao menu...\n");
 getchar();
 scanf("c\n");
-system("clear");      // linux limpar tela
-system("tput reset"); // linux limpar texto
+reset_screen();
 } 
 } 
 return 0; 
@@ -119,8 +118,7 @@ printf("\n Os %1.f volts inseridos equivalem a %1.f watts. \n", v1, resultado);
 printf("\nTeclar enter para retornar ao menu...\n");
 getchar();
 scanf("c\n");
-system("clear");      // linux limpar tela
-system("tput reset"); // linux limpar texto
+reset_screen();
 return; 
 }
 
@@ -140,8 +138,7 @@ printf("\n Os %1.f watts inseridos equivalem a %1.f volts. \n", v1, resultado);
 printf("\nTeclar enter para retornar ao menu...\n");
 getchar();
 scanf("c\n");
-system("clear");      // linux limpar tela
-system("tput reset"); // linux limpar texto
+reset_screen();
 return; 
 }
 
@@ -163,8 +160,7 @@ printf("\n A potencia dos modulos sera de %d watts.\n", resultado);
 printf("\nTeclar enter para retornar ao menu...\n");
 getchar();
 scanf("c\n");
-system("clear");      // linux limpar tela
-system("tput reset"); // linux limpar texto
+reset_screen();
 return; 
 }
 
@@ -193,8 +189,7 @@ printf("\n o resultado sera %.2f kwh/semana geracao [leste/oeste]\n", resultado)
 printf("\nTeclar enter para retornar ao menu...\n");
 getchar();
 scanf("c\n");
-system("clear");      // linux limpar tela
-system("tput reset"); // linux limpar texto
+reset_screen();
 return; 
 }
 
@@ -223,8 +218,7 @@ printf("\n o resultado sera %.2f kwh/mes geracao [leste/oeste]\n", resultado);
 printf("\nTeclar enter para retornar ao menu...\n"); 
 getchar();
 scanf("c\n");
-system("clear");      // linux limpar tela
-system("tput reset"); // linux limpar texto
+reset_screen();
 return; 
 }
 
@@ -253,8 +247,7 @@ printf("\n o resultado sera %.2f kwh/ano geracao [leste/oeste]\n", resultado);
 printf("\nTeclar enter para retornar ao menu...\n");
 getchar();
 scanf("c\n");
-system("clear");      // linux limpar tela
-system("tput reset"); // linux limpar texto
+reset_screen();
 return; 
 }
 
@@ -276,41 +269,44 @@ printf("\n A quantidade maxima de modulos para este dimensionamento eh de %.2f p
 printf("\nTeclar enter para retornar ao menu...\n");
 getchar();
 scanf("c\n");
-system("clear");      // linux limpar tela
-system("tput reset"); // linux limpar texto
+reset_screen();
 return; 
 }
 
 void op8() { 
-system("clear");      // linux limpar tela
-system("tput reset"); // linux limpar texto
+reset_screen();
 printf("\n");
 printf("\nInfo ");
 printf("\n");
 printf("\nPara converter volts em watts multiplicamos os volts por 10.\n");
 printf("\nPara converter watts em volts dividimos os watts por 10.\n");
 printf("\nPara calcular a potencia dos modulos fazemos a multiplicacao da potencia nominal do modulo vezes a quantidade de modulos.\n");
-printf("\nPara calcular a geração semanal utilizamos o calculo (potencia dos modulos)x(horas por dia)x(dias por semana). \n");
-printf("\nPara calcular a geração mensal utilizamos o calculo (potencia dos modulos)x(horas por dia)x(dias por mes). \n");
-printf("\nPara calcular a geração anual utilizamos o calculo (potencia dos modulos)x(horas por dia)x(dias por ano). \n");
+printf("\nPara calcular a geração semanal utilizamos o calculo (potencia dos modulos)x(horas por dia)x(dias por semana) ");
+printf("\ne o resultado sera em watts-hora e entao para obte-lo em kwh dividiremos por 1000 para converter para kwh, conforme calculado acima.");
+printf("\nPara calcular a geração mensal utilizamos o calculo (potencia dos modulos)x(horas por dia)x(dias por mes) ");
+printf("\ne o resultado sera em watts-hora e entao para obte-lo em kwh dividiremos por 1000 para converter para kwh, conforme calculado acima.");
+printf("\nPara calcular a geração anual utilizamos o calculo (potencia dos modulos)x(horas por dia)x(dias por ano) ");
+printf("\ne o resultado sera em watts-hora e entao para obte-lo em kwh dividiremos por 1000 para converter para kwh, conforme calculado acima.");
 printf("\nPara calcular e dimensionar a quantidade de modulos que compoe um painel solar utilizamos o seguinte calculo: \n");
 printf("\nPotencia calculada do sistema (Pfv) em watts dividido pela Potencia nominal do modulo em watts = a Quantidade de Modulos.\n");
 printf("\nPara converter 1kwh para 1wh basta fazer o calculo ex: 73kwh para wh sera 73000 wh.\n");
 printf("\n");
-// system("pause"); // pausa tela windows
-// system("Cls"); // limpa tela windows
-// printf("\n"); // pula linha
 printf("\nTeclar enter para retornar ao menu...\n");
 getchar();
 scanf("c\n");
-system("clear");      // linux limpar tela
-system("tput reset"); // linux limpar texto
+reset_screen();
 return; 
 }
 
+void reset_screen(){
+system("clear");      // linux
+system("tput reset"); // linux
+system("Cls"); // windows clear screen
+return;
+}
+
 int menu_desenvolvedor(){
-  system("clear");      // linux
-  system("tput reset"); // linux
+  reset_screen();
   printf("\n Algoritmo: Dimensionamento e Calculo para Sistema Fotovoltaico \n");
   printf("\n Author: PHNO ");
   printf("\n Data Release: 29/11/2023 ");
@@ -320,7 +316,6 @@ int menu_desenvolvedor(){
   printf("\n Teclar enter para retornar ao menu...\n ");
   getchar();
   scanf("c\n");
-  system("clear");      // linux
-  system("tput reset"); // linux
+  reset_screen();
   return 0;
 }
